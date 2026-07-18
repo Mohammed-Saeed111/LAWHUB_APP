@@ -20,15 +20,16 @@ const authApi = {
   resetPassword: (payload) =>
     axiosClient.post('/auth/reset-password', payload).then((r) => r.data),
 
-  setupMfa: (method) => axiosClient.post('/auth/mfa/setup', { method }).then((r) => r.data),
+  setupMfa: (method) =>
+    axiosClient.patch('/auth/mfa', { methods: method === 'none' ? [] : [method], enabled: method !== 'none' }).then((r) => r.data),
 
-  toggleBiometric: (enabled) =>
-    axiosClient.post('/auth/biometric/toggle', { enabled }).then((r) => r.data),
+  enableBiometric: () =>
+    axiosClient.post('/auth/biometric/enable').then((r) => r.data),
 
   // FormData (multipart) — license document upload for lawyers / firms.
   submitLawyerCredentials: (formData) =>
     axiosClient
-      .post('/auth/lawyer/credentials', formData, {
+      .post('/auth/lawyer-credentials', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       })
       .then((r) => r.data),

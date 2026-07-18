@@ -46,7 +46,7 @@ const OtpVerification = () => {
       const res = await verifyOtp({ email, code });
       toast.success('✅');
       const user = res.data.user;
-      const isPro = user.role === 'lawyer' || user.role === 'lawfirm';
+      const isPro = user.role === 'lawyer' || user.role === 'office';
       navigate(isPro ? '/lawyer-credentials' : '/mfa-setup', { replace: true });
     } catch (err) {
       toast.error(err.response?.data?.message || 'Invalid code.');

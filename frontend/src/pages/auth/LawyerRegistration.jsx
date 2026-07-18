@@ -27,7 +27,7 @@ const LawyerRegistration = () => {
   const [dragging, setDragging] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const isFirm = user?.role === 'lawfirm';
+  const isFirm = user?.role === 'office';
   const onChange = (e) => setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
 
   const acceptFile = (f) => {
@@ -59,7 +59,7 @@ const LawyerRegistration = () => {
       fd.append('barNumber', form.barNumber);
       fd.append('specialization', form.specialization);
       if (isFirm) fd.append('firmName', form.firmName);
-      fd.append('licenseDoc', file);
+      fd.append('barCard', file);
 
       const res = await authApi.submitLawyerCredentials(fd);
       updateUser(res.data.user);

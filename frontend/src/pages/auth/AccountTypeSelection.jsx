@@ -22,7 +22,7 @@ const AccountTypeSelection = () => {
     { key: 'client', icon: FiUser, title: t('accountType.client'), desc: t('accountType.clientDesc') },
     { key: 'lawyer', icon: GiGavel, title: t('accountType.lawyer'), desc: t('accountType.lawyerDesc') },
     {
-      key: 'lawfirm',
+      key: 'office',
       icon: HiOutlineOfficeBuilding,
       title: t('accountType.lawfirm'),
       desc: t('accountType.lawfirmDesc'),

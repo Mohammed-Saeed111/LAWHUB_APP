@@ -30,7 +30,7 @@ const Login = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await login(form);
+      await login({ email: form.identifier, password: form.password });
       toast.success(t('biometric.welcome') + ' 👋');
       navigate(from, { replace: true });
     } catch (err) {

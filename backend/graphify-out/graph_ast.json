@@ -1,0 +1,3919 @@
+{
+  "nodes": [
+    {
+      "id": "app",
+      "label": "app.js",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_app",
+      "label": "app",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "config_db",
+      "label": "db.js",
+      "file_type": "code",
+      "source_file": "config/db.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "config_db_connectdb",
+      "label": "connectDB()",
+      "file_type": "code",
+      "source_file": "config/db.js",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_auth_controller",
+      "label": "auth.controller.js",
+      "file_type": "code",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_auth_controller_refreshcookieoptions",
+      "label": "refreshCookieOptions",
+      "file_type": "code",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_auth_controller_register",
+      "label": "register",
+      "file_type": "code",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_auth_controller_verifyaccount",
+      "label": "verifyAccount",
+      "file_type": "code",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_auth_controller_resendotp",
+      "label": "resendOtp",
+      "file_type": "code",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L47",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_auth_controller_login",
+      "label": "login",
+      "file_type": "code",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L57",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_auth_controller_forgotpassword",
+      "label": "forgotPassword",
+      "file_type": "code",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L80",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_auth_controller_resetpassword",
+      "label": "resetPassword",
+      "file_type": "code",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L88",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_auth_controller_refresh",
+      "label": "refresh",
+      "file_type": "code",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L99",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_auth_controller_logout",
+      "label": "logout",
+      "file_type": "code",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L112",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_auth_controller_getme",
+      "label": "getMe",
+      "file_type": "code",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L118",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_auth_controller_setupmfa",
+      "label": "setupMfa",
+      "file_type": "code",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L123",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_auth_controller_submitlawyercredentials",
+      "label": "submitLawyerCredentials",
+      "file_type": "code",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L133",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_auth_controller_enablebiometric",
+      "label": "enableBiometric",
+      "file_type": "code",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L156",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_case_controller",
+      "label": "case.controller.js",
+      "file_type": "code",
+      "source_file": "controllers/case.controller.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_case_controller_listcases",
+      "label": "listCases",
+      "file_type": "code",
+      "source_file": "controllers/case.controller.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_consultation_controller",
+      "label": "consultation.controller.js",
+      "file_type": "code",
+      "source_file": "controllers/consultation.controller.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_consultation_controller_createconsultation",
+      "label": "createConsultation",
+      "file_type": "code",
+      "source_file": "controllers/consultation.controller.js",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_consultation_controller_payconsultation",
+      "label": "payConsultation",
+      "file_type": "code",
+      "source_file": "controllers/consultation.controller.js",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_consultation_controller_myconsultations",
+      "label": "myConsultations",
+      "file_type": "code",
+      "source_file": "controllers/consultation.controller.js",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_favorite_controller",
+      "label": "favorite.controller.js",
+      "file_type": "code",
+      "source_file": "controllers/favorite.controller.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_favorite_controller_listfavorites",
+      "label": "listFavorites",
+      "file_type": "code",
+      "source_file": "controllers/favorite.controller.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_favorite_controller_togglefavorite",
+      "label": "toggleFavorite",
+      "file_type": "code",
+      "source_file": "controllers/favorite.controller.js",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_lawyer_controller",
+      "label": "lawyer.controller.js",
+      "file_type": "code",
+      "source_file": "controllers/lawyer.controller.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_lawyer_controller_listlawyers",
+      "label": "listLawyers",
+      "file_type": "code",
+      "source_file": "controllers/lawyer.controller.js",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_lawyer_controller_getlawyer",
+      "label": "getLawyer",
+      "file_type": "code",
+      "source_file": "controllers/lawyer.controller.js",
+      "source_location": "L45",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_lawyer_controller_getlawyerreviews",
+      "label": "getLawyerReviews",
+      "file_type": "code",
+      "source_file": "controllers/lawyer.controller.js",
+      "source_location": "L52",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_meta_controller",
+      "label": "meta.controller.js",
+      "file_type": "code",
+      "source_file": "controllers/meta.controller.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_meta_controller_getcategories",
+      "label": "getCategories",
+      "file_type": "code",
+      "source_file": "controllers/meta.controller.js",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_meta_controller_getcities",
+      "label": "getCities",
+      "file_type": "code",
+      "source_file": "controllers/meta.controller.js",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "controllers_meta_controller_getarticles",
+      "label": "getArticles",
+      "file_type": "code",
+      "source_file": "controllers/meta.controller.js",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "middlewares_auth_middleware",
+      "label": "auth.middleware.js",
+      "file_type": "code",
+      "source_file": "middlewares/auth.middleware.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "middlewares_auth_middleware_protect",
+      "label": "protect",
+      "file_type": "code",
+      "source_file": "middlewares/auth.middleware.js",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "middlewares_auth_middleware_authorize",
+      "label": "authorize()",
+      "file_type": "code",
+      "source_file": "middlewares/auth.middleware.js",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "middlewares_error_middleware",
+      "label": "error.middleware.js",
+      "file_type": "code",
+      "source_file": "middlewares/error.middleware.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "middlewares_error_middleware_notfound",
+      "label": "notFound()",
+      "file_type": "code",
+      "source_file": "middlewares/error.middleware.js",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "middlewares_error_middleware_errorhandler",
+      "label": "errorHandler()",
+      "file_type": "code",
+      "source_file": "middlewares/error.middleware.js",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "middlewares_upload_middleware",
+      "label": "upload.middleware.js",
+      "file_type": "code",
+      "source_file": "middlewares/upload.middleware.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "middlewares_upload_middleware_storage",
+      "label": "storage",
+      "file_type": "code",
+      "source_file": "middlewares/upload.middleware.js",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "middlewares_upload_middleware_filefilter",
+      "label": "fileFilter()",
+      "file_type": "code",
+      "source_file": "middlewares/upload.middleware.js",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "middlewares_upload_middleware_uploadbarcard",
+      "label": "uploadBarCard",
+      "file_type": "code",
+      "source_file": "middlewares/upload.middleware.js",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "middlewares_validate_middleware",
+      "label": "validate.middleware.js",
+      "file_type": "code",
+      "source_file": "middlewares/validate.middleware.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "middlewares_validate_middleware_validate",
+      "label": "validate()",
+      "file_type": "code",
+      "source_file": "middlewares/validate.middleware.js",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_article_model",
+      "label": "article.model.js",
+      "file_type": "code",
+      "source_file": "models/article.model.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_article_model_articleschema",
+      "label": "articleSchema",
+      "file_type": "code",
+      "source_file": "models/article.model.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_case_model",
+      "label": "case.model.js",
+      "file_type": "code",
+      "source_file": "models/case.model.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_case_model_timelineitem",
+      "label": "timelineItem",
+      "file_type": "code",
+      "source_file": "models/case.model.js",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_case_model_caseschema",
+      "label": "caseSchema",
+      "file_type": "code",
+      "source_file": "models/case.model.js",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_category_model",
+      "label": "category.model.js",
+      "file_type": "code",
+      "source_file": "models/category.model.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_category_model_categoryschema",
+      "label": "categorySchema",
+      "file_type": "code",
+      "source_file": "models/category.model.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_consultation_model",
+      "label": "consultation.model.js",
+      "file_type": "code",
+      "source_file": "models/consultation.model.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_consultation_model_consultationschema",
+      "label": "consultationSchema",
+      "file_type": "code",
+      "source_file": "models/consultation.model.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_favorite_model",
+      "label": "favorite.model.js",
+      "file_type": "code",
+      "source_file": "models/favorite.model.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_favorite_model_favoriteschema",
+      "label": "favoriteSchema",
+      "file_type": "code",
+      "source_file": "models/favorite.model.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_lawyer_model",
+      "label": "lawyer.model.js",
+      "file_type": "code",
+      "source_file": "models/lawyer.model.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_lawyer_model_lawyerschema",
+      "label": "lawyerSchema",
+      "file_type": "code",
+      "source_file": "models/lawyer.model.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_otp_model",
+      "label": "otp.model.js",
+      "file_type": "code",
+      "source_file": "models/otp.model.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_otp_model_otpschema",
+      "label": "otpSchema",
+      "file_type": "code",
+      "source_file": "models/otp.model.js",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_otp_model_otp",
+      "label": "Otp",
+      "file_type": "code",
+      "source_file": "models/otp.model.js",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_review_model",
+      "label": "review.model.js",
+      "file_type": "code",
+      "source_file": "models/review.model.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_review_model_reviewschema",
+      "label": "reviewSchema",
+      "file_type": "code",
+      "source_file": "models/review.model.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_user_model",
+      "label": "user.model.js",
+      "file_type": "code",
+      "source_file": "models/user.model.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_user_model_userschema",
+      "label": "userSchema",
+      "file_type": "code",
+      "source_file": "models/user.model.js",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "models_user_model_user",
+      "label": "User",
+      "file_type": "code",
+      "source_file": "models/user.model.js",
+      "source_location": "L66",
+      "_origin": "ast"
+    },
+    {
+      "id": "routes_auth_routes",
+      "label": "auth.routes.js",
+      "file_type": "code",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "routes_auth_routes_router",
+      "label": "router",
+      "file_type": "code",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "routes_auth_routes_authlimiter",
+      "label": "authLimiter",
+      "file_type": "code",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "routes_case_routes",
+      "label": "case.routes.js",
+      "file_type": "code",
+      "source_file": "routes/case.routes.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "routes_case_routes_router",
+      "label": "router",
+      "file_type": "code",
+      "source_file": "routes/case.routes.js",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "routes_consultation_routes",
+      "label": "consultation.routes.js",
+      "file_type": "code",
+      "source_file": "routes/consultation.routes.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "routes_consultation_routes_router",
+      "label": "router",
+      "file_type": "code",
+      "source_file": "routes/consultation.routes.js",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "routes_favorite_routes",
+      "label": "favorite.routes.js",
+      "file_type": "code",
+      "source_file": "routes/favorite.routes.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "routes_favorite_routes_router",
+      "label": "router",
+      "file_type": "code",
+      "source_file": "routes/favorite.routes.js",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "routes_index",
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "routes/index.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "routes_index_router",
+      "label": "router",
+      "file_type": "code",
+      "source_file": "routes/index.js",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "routes_lawyer_routes",
+      "label": "lawyer.routes.js",
+      "file_type": "code",
+      "source_file": "routes/lawyer.routes.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "routes_lawyer_routes_router",
+      "label": "router",
+      "file_type": "code",
+      "source_file": "routes/lawyer.routes.js",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "routes_meta_routes",
+      "label": "meta.routes.js",
+      "file_type": "code",
+      "source_file": "routes/meta.routes.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "routes_meta_routes_router",
+      "label": "router",
+      "file_type": "code",
+      "source_file": "routes/meta.routes.js",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "server",
+      "label": "server.js",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "server_start",
+      "label": "start()",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_email_service",
+      "label": "email.service.js",
+      "file_type": "code",
+      "source_file": "services/email.service.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_email_service_gettransporter",
+      "label": "getTransporter()",
+      "file_type": "code",
+      "source_file": "services/email.service.js",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_email_service_sendemail",
+      "label": "sendEmail()",
+      "file_type": "code",
+      "source_file": "services/email.service.js",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_email_service_sendotpemail",
+      "label": "sendOtpEmail()",
+      "file_type": "code",
+      "source_file": "services/email.service.js",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_otp_service",
+      "label": "otp.service.js",
+      "file_type": "code",
+      "source_file": "services/otp.service.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_otp_service_createandsendotp",
+      "label": "createAndSendOtp()",
+      "file_type": "code",
+      "source_file": "services/otp.service.js",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_otp_service_verifyotp",
+      "label": "verifyOtp()",
+      "file_type": "code",
+      "source_file": "services/otp.service.js",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_token_service",
+      "label": "token.service.js",
+      "file_type": "code",
+      "source_file": "services/token.service.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_token_service_signaccesstoken",
+      "label": "signAccessToken()",
+      "file_type": "code",
+      "source_file": "services/token.service.js",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_token_service_signrefreshtoken",
+      "label": "signRefreshToken()",
+      "file_type": "code",
+      "source_file": "services/token.service.js",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_token_service_verifyaccesstoken",
+      "label": "verifyAccessToken()",
+      "file_type": "code",
+      "source_file": "services/token.service.js",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_token_service_verifyrefreshtoken",
+      "label": "verifyRefreshToken()",
+      "file_type": "code",
+      "source_file": "services/token.service.js",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_token_service_issueauthtokens",
+      "label": "issueAuthTokens()",
+      "file_type": "code",
+      "source_file": "services/token.service.js",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_apierror",
+      "label": "ApiError.js",
+      "file_type": "code",
+      "source_file": "utils/ApiError.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_apierror_apierror",
+      "label": "ApiError",
+      "file_type": "code",
+      "source_file": "utils/ApiError.js",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_apierror_apierror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "utils/ApiError.js",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_apierror_apierror_badrequest",
+      "label": ".badRequest()",
+      "file_type": "code",
+      "source_file": "utils/ApiError.js",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_apierror_apierror_unauthorized",
+      "label": ".unauthorized()",
+      "file_type": "code",
+      "source_file": "utils/ApiError.js",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_apierror_apierror_forbidden",
+      "label": ".forbidden()",
+      "file_type": "code",
+      "source_file": "utils/ApiError.js",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_apierror_apierror_notfound",
+      "label": ".notFound()",
+      "file_type": "code",
+      "source_file": "utils/ApiError.js",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_apierror_apierror_conflict",
+      "label": ".conflict()",
+      "file_type": "code",
+      "source_file": "utils/ApiError.js",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_asynchandler",
+      "label": "asyncHandler.js",
+      "file_type": "code",
+      "source_file": "utils/asyncHandler.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_asynchandler_asynchandler",
+      "label": "asyncHandler()",
+      "file_type": "code",
+      "source_file": "utils/asyncHandler.js",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_generateotp",
+      "label": "generateOtp.js",
+      "file_type": "code",
+      "source_file": "utils/generateOtp.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_generateotp_generateotp",
+      "label": "generateOtp()",
+      "file_type": "code",
+      "source_file": "utils/generateOtp.js",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_seed",
+      "label": "seed.js",
+      "file_type": "code",
+      "source_file": "utils/seed.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_seed_categories",
+      "label": "CATEGORIES",
+      "file_type": "code",
+      "source_file": "utils/seed.js",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_seed_lawyers",
+      "label": "LAWYERS",
+      "file_type": "code",
+      "source_file": "utils/seed.js",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_seed_articles",
+      "label": "ARTICLES",
+      "file_type": "code",
+      "source_file": "utils/seed.js",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "utils_seed_run",
+      "label": "run()",
+      "file_type": "code",
+      "source_file": "utils/seed.js",
+      "source_location": "L47",
+      "_origin": "ast"
+    },
+    {
+      "id": "validators_auth_validators",
+      "label": "auth.validators.js",
+      "file_type": "code",
+      "source_file": "validators/auth.validators.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "validators_auth_validators_registervalidator",
+      "label": "registerValidator",
+      "file_type": "code",
+      "source_file": "validators/auth.validators.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "validators_auth_validators_loginvalidator",
+      "label": "loginValidator",
+      "file_type": "code",
+      "source_file": "validators/auth.validators.js",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "validators_auth_validators_otpvalidator",
+      "label": "otpValidator",
+      "file_type": "code",
+      "source_file": "validators/auth.validators.js",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "validators_auth_validators_emailonlyvalidator",
+      "label": "emailOnlyValidator",
+      "file_type": "code",
+      "source_file": "validators/auth.validators.js",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "validators_auth_validators_resetpasswordvalidator",
+      "label": "resetPasswordValidator",
+      "file_type": "code",
+      "source_file": "validators/auth.validators.js",
+      "source_location": "L30",
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "app",
+      "target": "ref_express",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "ref_cors",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "ref_helmet",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "ref_morgan",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "ref_cookie_parser",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "routes_index",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "middlewares_error_middleware",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "middlewares_error_middleware_notfound",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "middlewares_error_middleware_errorhandler",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "app_app",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "config_db",
+      "target": "ref_mongoose",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "config/db.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "config_db",
+      "target": "config_db_connectdb",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "config/db.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "models_user_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "utils_apierror",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "utils_asynchandler",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "services_otp_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "services_otp_service_createandsendotp",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "services_otp_service_verifyotp",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "services_token_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "services_token_service_issueauthtokens",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "services_token_service_verifyrefreshtoken",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "services_token_service_signaccesstoken",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "controllers_auth_controller_refreshcookieoptions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "controllers_auth_controller_register",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "controllers_auth_controller_verifyaccount",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "controllers_auth_controller_resendotp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "controllers_auth_controller_login",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "controllers_auth_controller_forgotpassword",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "controllers_auth_controller_resetpassword",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "controllers_auth_controller_refresh",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "controllers_auth_controller_logout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "controllers_auth_controller_getme",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "controllers_auth_controller_setupmfa",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "controllers_auth_controller_submitlawyercredentials",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "controllers_auth_controller_enablebiometric",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L156",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_case_controller",
+      "target": "models_case_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/case.controller.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_case_controller",
+      "target": "utils_asynchandler",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/case.controller.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_case_controller",
+      "target": "controllers_case_controller_listcases",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/case.controller.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_consultation_controller",
+      "target": "models_consultation_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/consultation.controller.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_consultation_controller",
+      "target": "models_lawyer_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/consultation.controller.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_consultation_controller",
+      "target": "utils_apierror",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/consultation.controller.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_consultation_controller",
+      "target": "utils_asynchandler",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/consultation.controller.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_consultation_controller",
+      "target": "controllers_consultation_controller_createconsultation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/consultation.controller.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_consultation_controller",
+      "target": "controllers_consultation_controller_payconsultation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/consultation.controller.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_consultation_controller",
+      "target": "controllers_consultation_controller_myconsultations",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/consultation.controller.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_favorite_controller",
+      "target": "models_favorite_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/favorite.controller.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_favorite_controller",
+      "target": "utils_asynchandler",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/favorite.controller.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_favorite_controller",
+      "target": "controllers_favorite_controller_listfavorites",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/favorite.controller.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_favorite_controller",
+      "target": "controllers_favorite_controller_togglefavorite",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/favorite.controller.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_lawyer_controller",
+      "target": "models_lawyer_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/lawyer.controller.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_lawyer_controller",
+      "target": "models_review_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/lawyer.controller.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_lawyer_controller",
+      "target": "utils_apierror",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/lawyer.controller.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_lawyer_controller",
+      "target": "utils_asynchandler",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/lawyer.controller.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_lawyer_controller",
+      "target": "controllers_lawyer_controller_listlawyers",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/lawyer.controller.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_lawyer_controller",
+      "target": "controllers_lawyer_controller_getlawyer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/lawyer.controller.js",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_lawyer_controller",
+      "target": "controllers_lawyer_controller_getlawyerreviews",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/lawyer.controller.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_meta_controller",
+      "target": "models_category_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/meta.controller.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_meta_controller",
+      "target": "models_article_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/meta.controller.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_meta_controller",
+      "target": "models_lawyer_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/meta.controller.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_meta_controller",
+      "target": "utils_asynchandler",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/meta.controller.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_meta_controller",
+      "target": "controllers_meta_controller_getcategories",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/meta.controller.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_meta_controller",
+      "target": "controllers_meta_controller_getcities",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/meta.controller.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_meta_controller",
+      "target": "controllers_meta_controller_getarticles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/meta.controller.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_auth_middleware",
+      "target": "services_token_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/auth.middleware.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_auth_middleware",
+      "target": "services_token_service_verifyaccesstoken",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/auth.middleware.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_auth_middleware",
+      "target": "models_user_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/auth.middleware.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_auth_middleware",
+      "target": "utils_apierror",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/auth.middleware.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_auth_middleware",
+      "target": "utils_asynchandler",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/auth.middleware.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_auth_middleware",
+      "target": "middlewares_auth_middleware_protect",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/auth.middleware.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_auth_middleware",
+      "target": "middlewares_auth_middleware_authorize",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/auth.middleware.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_error_middleware",
+      "target": "utils_apierror",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/error.middleware.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_error_middleware",
+      "target": "middlewares_error_middleware_notfound",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/error.middleware.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_error_middleware",
+      "target": "middlewares_error_middleware_errorhandler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/error.middleware.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_upload_middleware",
+      "target": "ref_multer",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/upload.middleware.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_upload_middleware",
+      "target": "ref_path",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/upload.middleware.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_upload_middleware",
+      "target": "ref_fs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/upload.middleware.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_upload_middleware",
+      "target": "utils_apierror",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/upload.middleware.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_upload_middleware",
+      "target": "middlewares_upload_middleware_storage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/upload.middleware.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_upload_middleware",
+      "target": "middlewares_upload_middleware_filefilter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/upload.middleware.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_upload_middleware",
+      "target": "middlewares_upload_middleware_uploadbarcard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/upload.middleware.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_upload_middleware",
+      "target": "middlewares_upload_middleware_filefilter",
+      "relation": "indirect_call",
+      "context": "collection",
+      "confidence": "INFERRED",
+      "source_file": "middlewares/upload.middleware.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_validate_middleware",
+      "target": "ref_express_validator",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/validate.middleware.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_validate_middleware",
+      "target": "utils_apierror",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/validate.middleware.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_validate_middleware",
+      "target": "middlewares_validate_middleware_validate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/validate.middleware.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_article_model",
+      "target": "ref_mongoose",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "models/article.model.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_article_model",
+      "target": "models_article_model_articleschema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/article.model.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_case_model",
+      "target": "ref_mongoose",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "models/case.model.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_case_model",
+      "target": "models_case_model_timelineitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/case.model.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_case_model",
+      "target": "models_case_model_caseschema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/case.model.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_category_model",
+      "target": "ref_mongoose",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "models/category.model.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_category_model",
+      "target": "models_category_model_categoryschema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/category.model.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_consultation_model",
+      "target": "ref_mongoose",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "models/consultation.model.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_consultation_model",
+      "target": "models_consultation_model_consultationschema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/consultation.model.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_favorite_model",
+      "target": "ref_mongoose",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "models/favorite.model.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_favorite_model",
+      "target": "models_favorite_model_favoriteschema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/favorite.model.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_lawyer_model",
+      "target": "ref_mongoose",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "models/lawyer.model.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_lawyer_model",
+      "target": "models_lawyer_model_lawyerschema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/lawyer.model.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_otp_model",
+      "target": "ref_mongoose",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "models/otp.model.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_otp_model",
+      "target": "ref_bcryptjs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "models/otp.model.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_otp_model",
+      "target": "models_otp_model_otpschema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/otp.model.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_otp_model",
+      "target": "models_otp_model_otp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/otp.model.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_review_model",
+      "target": "ref_mongoose",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "models/review.model.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_review_model",
+      "target": "models_review_model_reviewschema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/review.model.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_user_model",
+      "target": "ref_mongoose",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "models/user.model.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_user_model",
+      "target": "ref_bcryptjs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "models/user.model.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_user_model",
+      "target": "models_user_model_userschema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/user.model.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "models_user_model",
+      "target": "models_user_model_user",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/user.model.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "ref_express",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "ref_express_rate_limit",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "controllers_auth_controller",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "controllers_auth_controller_register",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "controllers_auth_controller_verifyaccount",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "controllers_auth_controller_resendotp",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "controllers_auth_controller_login",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "controllers_auth_controller_forgotpassword",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "controllers_auth_controller_resetpassword",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "controllers_auth_controller_refresh",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "controllers_auth_controller_logout",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "controllers_auth_controller_getme",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "controllers_auth_controller_setupmfa",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "controllers_auth_controller_submitlawyercredentials",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "controllers_auth_controller_enablebiometric",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "middlewares_auth_middleware",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "middlewares_auth_middleware_protect",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "middlewares_auth_middleware_authorize",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "middlewares_validate_middleware",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "middlewares_validate_middleware_validate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "middlewares_upload_middleware",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "middlewares_upload_middleware_uploadbarcard",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "validators_auth_validators",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "validators_auth_validators_registervalidator",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "validators_auth_validators_loginvalidator",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "validators_auth_validators_otpvalidator",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "validators_auth_validators_emailonlyvalidator",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "validators_auth_validators_resetpasswordvalidator",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "routes_auth_routes_router",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_auth_routes",
+      "target": "routes_auth_routes_authlimiter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_case_routes",
+      "target": "ref_express",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/case.routes.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_case_routes",
+      "target": "controllers_case_controller",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/case.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_case_routes",
+      "target": "controllers_case_controller_listcases",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/case.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_case_routes",
+      "target": "routes_case_routes_router",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/case.routes.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_consultation_routes",
+      "target": "ref_express",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/consultation.routes.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_consultation_routes",
+      "target": "controllers_consultation_controller",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/consultation.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_consultation_routes",
+      "target": "controllers_consultation_controller_createconsultation",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/consultation.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_consultation_routes",
+      "target": "controllers_consultation_controller_payconsultation",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/consultation.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_consultation_routes",
+      "target": "controllers_consultation_controller_myconsultations",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/consultation.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_consultation_routes",
+      "target": "routes_consultation_routes_router",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/consultation.routes.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_favorite_routes",
+      "target": "ref_express",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/favorite.routes.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_favorite_routes",
+      "target": "controllers_favorite_controller",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/favorite.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_favorite_routes",
+      "target": "controllers_favorite_controller_listfavorites",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/favorite.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_favorite_routes",
+      "target": "controllers_favorite_controller_togglefavorite",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/favorite.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_favorite_routes",
+      "target": "routes_favorite_routes_router",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/favorite.routes.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "ref_express",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "middlewares_auth_middleware",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "middlewares_auth_middleware_protect",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "routes_auth_routes",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "routes_lawyer_routes",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "routes_meta_routes",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "routes_favorite_routes",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "routes_consultation_routes",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "routes_case_routes",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "routes_index_router",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_lawyer_routes",
+      "target": "ref_express",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/lawyer.routes.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_lawyer_routes",
+      "target": "controllers_lawyer_controller",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/lawyer.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_lawyer_routes",
+      "target": "controllers_lawyer_controller_listlawyers",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/lawyer.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_lawyer_routes",
+      "target": "controllers_lawyer_controller_getlawyer",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/lawyer.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_lawyer_routes",
+      "target": "controllers_lawyer_controller_getlawyerreviews",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/lawyer.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_lawyer_routes",
+      "target": "routes_lawyer_routes_router",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/lawyer.routes.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_meta_routes",
+      "target": "ref_express",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/meta.routes.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_meta_routes",
+      "target": "controllers_meta_controller",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/meta.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_meta_routes",
+      "target": "controllers_meta_controller_getcategories",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/meta.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_meta_routes",
+      "target": "controllers_meta_controller_getcities",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/meta.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_meta_routes",
+      "target": "controllers_meta_controller_getarticles",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/meta.routes.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_meta_routes",
+      "target": "routes_meta_routes_router",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/meta.routes.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "server",
+      "target": "ref_dotenv_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "server",
+      "target": "app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "server",
+      "target": "config_db",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "server",
+      "target": "server_start",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_email_service",
+      "target": "ref_nodemailer",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/email.service.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_email_service",
+      "target": "services_email_service_gettransporter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "services/email.service.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_email_service",
+      "target": "services_email_service_sendemail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "services/email.service.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_email_service",
+      "target": "services_email_service_sendotpemail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "services/email.service.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_email_service_sendemail",
+      "target": "services_email_service_gettransporter",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "services/email.service.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_email_service_sendotpemail",
+      "target": "services_email_service_sendemail",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "services/email.service.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_otp_service",
+      "target": "models_otp_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/otp.service.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_otp_service",
+      "target": "utils_generateotp",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/otp.service.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_otp_service",
+      "target": "utils_generateotp_generateotp",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/otp.service.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_otp_service",
+      "target": "services_email_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/otp.service.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_otp_service",
+      "target": "services_email_service_sendotpemail",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/otp.service.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_otp_service",
+      "target": "utils_apierror",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/otp.service.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_otp_service",
+      "target": "services_otp_service_createandsendotp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "services/otp.service.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_otp_service",
+      "target": "services_otp_service_verifyotp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "services/otp.service.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_token_service",
+      "target": "ref_jsonwebtoken",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/token.service.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_token_service",
+      "target": "services_token_service_signaccesstoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "services/token.service.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_token_service",
+      "target": "services_token_service_signrefreshtoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "services/token.service.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_token_service",
+      "target": "services_token_service_verifyaccesstoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "services/token.service.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_token_service",
+      "target": "services_token_service_verifyrefreshtoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "services/token.service.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_token_service",
+      "target": "services_token_service_issueauthtokens",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "services/token.service.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_token_service_issueauthtokens",
+      "target": "services_token_service_signaccesstoken",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "services/token.service.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_token_service_issueauthtokens",
+      "target": "services_token_service_signrefreshtoken",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "services/token.service.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_apierror",
+      "target": "utils_apierror_apierror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/ApiError.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_apierror_apierror",
+      "target": "utils_apierror_apierror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/ApiError.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_apierror_apierror",
+      "target": "utils_apierror_apierror_badrequest",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/ApiError.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_apierror_apierror",
+      "target": "utils_apierror_apierror_unauthorized",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/ApiError.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_apierror_apierror",
+      "target": "utils_apierror_apierror_forbidden",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/ApiError.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_apierror_apierror",
+      "target": "utils_apierror_apierror_notfound",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/ApiError.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_apierror_apierror",
+      "target": "utils_apierror_apierror_conflict",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/ApiError.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_asynchandler",
+      "target": "utils_asynchandler_asynchandler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/asyncHandler.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_generateotp",
+      "target": "utils_generateotp_generateotp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/generateOtp.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "ref_dotenv_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "ref_mongoose",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "config_db",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "models_user_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "models_lawyer_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "models_review_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "models_article_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "models_category_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "models_case_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "models_consultation_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "models_favorite_model",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "utils_seed_categories",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "utils_seed_lawyers",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "utils_seed_articles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "utils_seed_run",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "validators_auth_validators",
+      "target": "ref_express_validator",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "validators/auth.validators.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "validators_auth_validators",
+      "target": "validators_auth_validators_registervalidator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "validators/auth.validators.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "validators_auth_validators",
+      "target": "validators_auth_validators_loginvalidator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "validators/auth.validators.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "validators_auth_validators",
+      "target": "validators_auth_validators_otpvalidator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "validators/auth.validators.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "validators_auth_validators",
+      "target": "validators_auth_validators_emailonlyvalidator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "validators/auth.validators.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "validators_auth_validators",
+      "target": "validators_auth_validators_resetpasswordvalidator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "validators/auth.validators.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "routes_index_router",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "models_user_model_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "utils_apierror_apierror",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_auth_controller",
+      "target": "utils_asynchandler_asynchandler",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.controller.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_case_controller",
+      "target": "utils_asynchandler_asynchandler",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/case.controller.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_consultation_controller",
+      "target": "utils_apierror_apierror",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/consultation.controller.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_consultation_controller",
+      "target": "utils_asynchandler_asynchandler",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/consultation.controller.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_favorite_controller",
+      "target": "utils_asynchandler_asynchandler",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/favorite.controller.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_lawyer_controller",
+      "target": "utils_apierror_apierror",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/lawyer.controller.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_lawyer_controller",
+      "target": "utils_asynchandler_asynchandler",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/lawyer.controller.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "controllers_meta_controller",
+      "target": "utils_asynchandler_asynchandler",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/meta.controller.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_auth_middleware",
+      "target": "models_user_model_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/auth.middleware.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_auth_middleware",
+      "target": "utils_apierror_apierror",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/auth.middleware.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_auth_middleware",
+      "target": "utils_asynchandler_asynchandler",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/auth.middleware.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_error_middleware",
+      "target": "utils_apierror_apierror",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/error.middleware.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_upload_middleware",
+      "target": "utils_apierror_apierror",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/upload.middleware.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_validate_middleware",
+      "target": "utils_apierror_apierror",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/validate.middleware.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "routes_auth_routes_router",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "routes_lawyer_routes_router",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "routes_meta_routes_router",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "routes_favorite_routes_router",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "routes_consultation_routes_router",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "routes_index",
+      "target": "routes_case_routes_router",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/index.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "server",
+      "target": "app_app",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "server",
+      "target": "config_db_connectdb",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_otp_service",
+      "target": "models_otp_model_otp",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/otp.service.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_otp_service",
+      "target": "utils_apierror_apierror",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/otp.service.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "config_db_connectdb",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed",
+      "target": "models_user_model_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "server_start",
+      "target": "config_db_connectdb",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed_run",
+      "target": "config_db_connectdb",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "utils/seed.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "c_users_mo_music_lawhub_app_backend_src_app_js",
+      "target": "middlewares_error_middleware_notfound",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "c_users_mo_music_lawhub_app_backend_src_app_js",
+      "target": "middlewares_error_middleware_errorhandler",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "c_users_mo_music_lawhub_app_backend_src_routes_auth_routes_js",
+      "target": "middlewares_validate_middleware_validate",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "routes/auth.routes.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_otp_service_createandsendotp",
+      "target": "utils_generateotp_generateotp",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "services/otp.service.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_otp_service_createandsendotp",
+      "target": "services_email_service_sendotpemail",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "services/otp.service.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_auth_middleware_authorize",
+      "target": "utils_apierror_apierror_forbidden",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "middlewares/auth.middleware.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_error_middleware_notfound",
+      "target": "utils_apierror_apierror_notfound",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "middlewares/error.middleware.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_upload_middleware_filefilter",
+      "target": "utils_apierror_apierror_badrequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "middlewares/upload.middleware.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "middlewares_validate_middleware_validate",
+      "target": "utils_apierror_apierror_badrequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "middlewares/validate.middleware.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_otp_service_createandsendotp",
+      "target": "models_otp_model_otp",
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "services/otp.service.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_otp_service_verifyotp",
+      "target": "models_otp_model_otp",
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "services/otp.service.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_otp_service_verifyotp",
+      "target": "utils_apierror_apierror_badrequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "services/otp.service.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "utils_seed_run",
+      "target": "models_user_model_user",
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "utils/seed.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

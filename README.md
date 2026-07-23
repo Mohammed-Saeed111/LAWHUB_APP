@@ -1,18 +1,20 @@
-# محاميك — Egypt LawHub · Unified Web App (20 Screens)
+# محاميك — Egypt LawHub · Unified Web App (44 Screens)
 
-A single, end-to-end web application that merges the two phases into one product:
+A single, end-to-end web application merging all five phases into one product:
 
-- **Phase 0 / A — Onboarding & Authentication** (the funnel: 10 screens)
-- **Phase B — The Client Journey** (the product: 10 screens)
+- **Phase 0 / A — Onboarding & Authentication** (10 screens)
+- **Phase B — The Client Journey** (10 screens)
+- **Phase C — Lawyer Workspace** (10 screens)
+- **Phase D — Legal Commerce & AI Intelligence** (7 screens)
+- **Phase E — Community, Education & Communication** (7 screens)
 
-**One backend, one frontend, real JWT authentication** protecting the whole
-Client Journey. Theme: *Legal Luxury* — deep navy `#0A0E17` + warm gold `#C9A24B`,
-full Arabic **RTL** with an Arabic ⇄ English switch.
+**One backend, one frontend, real JWT authentication** protecting the whole platform.  
+Theme: *Legal Luxury* — deep navy `#0A0E17` + warm gold `#C9A24B`, full Arabic **RTL** with Arabic ⇄ English switch.
 
 ```
 lawhub-app/
-├── backend/     # Node.js + Express + MongoDB (Auth + Client Journey API)
-└── frontend/    # React + Vite + Tailwind (all 20 screens, unified routing)
+├── backend/     # Node.js + Express + MongoDB
+└── frontend/    # React + Vite + Tailwind (44 screens, unified routing)
 ```
 
 ---
@@ -20,93 +22,52 @@ lawhub-app/
 ## 🧭 The unified flow
 
 ```
-/welcome (Splash) → /language → /login ──► /success ──►  /  (Client Home)
-        │                                    ▲
-        └── register → /verify → /mfa-setup ─┘
-                          │
-          (lawyer/office) └► /lawyer-credentials → /under-review
+/welcome → /language → /login ──► /success ──► / (Client Home)
+                                    ▲
+    register → /verify → /mfa-setup─┘
+                │
+  (lawyer/office)└► /lawyer-credentials → /under-review
 
-Once authenticated, the whole product lives at the root paths:
+Once authenticated:
 /  ·  /map  ·  /search  ·  /lawyer/:id  ·  /favorites
 /booking/:id  ·  /payment  ·  /cases  ·  /policy
-```
 
-- **Unauthenticated** visitors to any product page are bounced to `/welcome`.
-- After login/verification, **AuthSuccess → “enter platform” → `/`** (Client Home).
+/workspace/*  (lawyer/office only)
+
+/market  ·  /market/analyze  ·  /market/advisor
+/market/editor/:id  ·  /market/sign/:id
+/market/transactions  ·  /market/success/:id
+
+/community/videos  ·  /community/news  ·  /community/chat
+/community/notifications  ·  /community/referral
+/community/finance  ·  /community/help
+```
 
 ---
 
-## 🖥️ The 20 screens
+## 🖥️ The 44 Screens
 
-**Onboarding & Auth (funnel)**
-1. Splash `/welcome` · 2. Language `/language` · 3. Login `/login` ·
-4. Account Type `/register` · 5. OTP `/verify` · 6. MFA `/mfa-setup` ·
-7. Lawyer Credentials `/lawyer-credentials` · 8. Under Review `/under-review` ·
-9. Biometric `/biometric` · 10. Success `/success`
+### Phase 0/A — Onboarding & Auth (10 screens)
+`/welcome` · `/language` · `/login` · `/register` · `/register/details`  
+`/verify` · `/mfa-setup` · `/biometric` · `/lawyer-credentials` · `/under-review` · `/success`
 
-**Client Journey (product)**
-1. Home `/` · 2. Map `/map` · 3. Search `/search` · 4. Lawyer Profile `/lawyer/:id` ·
-5. Favorites `/favorites` · 6. Booking `/booking/:id` · 7. Payment & Escrow `/payment` ·
-8. My Cases `/cases` · 9. Empty State (inside `/cases`) · 10. Policy `/policy`
+### Phase B — Client Journey (10 screens)
+`/` · `/map` · `/search` · `/lawyer/:id` · `/favorites`  
+`/booking/:id` · `/payment` · `/cases` · `/policy`
 
----
+### Phase C — Lawyer Workspace (10 screens)
+`/workspace` · `/workspace/calendar` · `/workspace/cases` · `/workspace/cases/:id`  
+`/workspace/team` · `/workspace/assignment` · `/workspace/services`  
+`/workspace/membership` · `/workspace/plans` · `/workspace/reviews`
 
-## 🚀 Run it (two terminals)
+### Phase D — Legal Commerce & AI (7 screens)
+`/market` · `/market/editor/:id` · `/market/analyze` · `/market/advisor`  
+`/market/sign/:id` · `/market/success/:id` · `/market/transactions`
 
-### 1) Backend
-```bash
-cd backend
-npm install
-cp .env.example .env         # set MONGO_URI + JWT secrets
-npm run seed                 # demo data + a demo client account
-npm run dev                  # http://localhost:5000
-```
-
-### 2) Frontend
-```bash
-cd frontend
-npm install
-npm run dev                  # http://localhost:5173  (proxies /api + /uploads)
-```
-
-**Demo login** (created by the seed):
-```
-email:    client@lawhub.eg
-password: Client@123
-```
-Logging in as the demo user shows populated favorites & cases.
-Registering a **new** account instead demonstrates the empty-state screen.
-
-Requirements: Node.js ≥ 18 and a running MongoDB instance.
-
----
-
-## 🔐 How the auth is unified
-
-- **Frontend:** every Client-Journey request goes through the same authenticated
-  axios instance (`src/api/axiosClient.js`). `src/api/client.js` wraps it, so
-  `lawhubApi` calls automatically carry the **Bearer access token** and get a
-  **silent refresh + retry** on 401.
-- **State:** `AuthContext` owns the session; `AppContext` (favorites/booking)
-  re-loads favorites whenever the auth state changes.
-- **Routing:** `ProtectedRoute` guards the whole Client Journey and the
-  session-bound auth steps; unauthenticated users are redirected to `/welcome`.
-- **Backend:** a single `protect` middleware sets both `req.user` (Phase 0) and
-  `req.userId` (Phase B), so both codebases work unchanged. Favorites,
-  consultations and cases routes are mounted behind `protect`.
-
----
-
-## 📡 API surface (`/api`)
-
-**Auth** — `/auth/register`, `/auth/verify-otp`, `/auth/resend-otp`, `/auth/login`,
-`/auth/forgot-password`, `/auth/reset-password`, `/auth/refresh`, `/auth/logout`,
-`/auth/me`, `/auth/mfa`, `/auth/lawyer-credentials`, `/auth/biometric/enable`
-
-**Client Journey** — `/lawyers` (search/filter), `/lawyers/:id`, `/lawyers/:id/reviews`,
-`/categories`, `/cities`, `/articles`, `/favorites` 🔒, `/consultations` 🔒,
-`/consultations/:id/pay` 🔒 (escrow), `/cases` 🔒
-(🔒 = requires a logged-in user).
+### Phase E — Community, Education & Communication (7 screens)
+`/community/videos` · `/community/news` · `/community/chat`  
+`/community/notifications` · `/community/referral`  
+`/community/finance` · `/community/help`
 
 ---
 
@@ -114,31 +75,58 @@ Requirements: Node.js ≥ 18 and a running MongoDB instance.
 
 ```
 backend/src/
-├── models/        user, otp, lawyer, review, article, category, favorite, consultation, case
-├── controllers/   auth, lawyer, meta, favorite, consultation, case
-├── routes/        auth + lawyer + meta + favorite + consultation + case (unified index.js)
-├── middlewares/   auth(protect → req.user + req.userId), validate, upload, error
+├── models/        user, otp, lawyer, review, article, category, favorite,
+│                  consultation, case, advice, analysis, template, transaction,
+│                  member, plan, profile, appointment, workspace
+│                  + [E] video, news, chat, notification, referral, finance, support
+├── controllers/   auth, lawyer, meta, favorite, consultation, case,
+│                  workspace, market, ai
+│                  + [E] content, chat
+├── routes/        unified index.js (Phases A→E)
+├── middlewares/   auth (protect), validate, upload, error
 ├── services/      token, otp, email
 ├── utils/         ApiError, asyncHandler, generateOtp, seed
-├── app.js  ·  server.js
+└── app.js · server.js
 
 frontend/src/
-├── api/           axiosClient, authApi, client (wraps axios), lawhubApi, normalize
+├── api/           axiosClient, authApi, client, lawhubApi, normalize,
+│                  phaseDApi, phaseEApi
 ├── context/       AuthContext · LanguageContext · AppContext
 ├── i18n/          ar/en translations
-├── components/    ui/* (Logo, Button, Input, OtpInput, LawyerCard, Rating, …)
-│                  layout/ClientLayout (the app shell)
-├── layouts/       AuthLayout (the funnel shell)
-├── pages/         auth/* (10 funnel screens) + client journey (10 screens)
-├── routes/        AppRoutes (unified) · ProtectedRoute
+├── components/    ui/* · layout/ClientLayout · ai/*
+├── layouts/       AuthLayout · WorkspaceLayout
+├── pages/         auth/* (Phase A) · (Phase B roots) · lawyer/* (Phase C)
+│                  market/* (Phase D) · community/* (Phase E)
+├── routes/        AppRoutes (unified 44-screen) · ProtectedRoute
 └── styles/index.css
 ```
 
 ---
 
-## 🔮 Next ideas
+## Phase E — API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/videos` | E1: Video library (filterable by category) |
+| GET | `/api/news` | E2: Legal news feed |
+| GET | `/api/conversations` | E3: Chat conversations |
+| GET | `/api/conversations/:id/messages` | E3: Messages in conversation |
+| POST | `/api/conversations/:id/messages` | E3: Send message |
+| GET | `/api/notifications` | E4: User notifications |
+| PATCH | `/api/notifications/:id/read` | E4: Mark notification read |
+| PATCH | `/api/notifications/read-all` | E4: Mark all read |
+| GET | `/api/referral` | E5: Referral code + leaderboard |
+| GET | `/api/finance` | E6: Financial reports |
+| GET | `/api/faqs` | E7: FAQ list |
+| GET | `/api/tickets` | E7: My support tickets |
+| POST | `/api/tickets` | E7: Create support ticket |
+
+---
+
+## 🔮 Next Ideas
+- Real **WebSocket** for live chat (Socket.io).
 - Real **WebAuthn** for the biometric screen.
-- **Phase C — Lawyer Journey** (manage consultations, calendar, earnings).
+- **Phase F** — Admin Dashboard (user management, content moderation).
 - Real file uploads (Multer) for booking documents.
 
-*One product, 20 screens, connected end-to-end.*
+*One product, 44 screens, connected end-to-end.*

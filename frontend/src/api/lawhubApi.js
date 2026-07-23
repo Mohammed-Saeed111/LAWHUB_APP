@@ -38,3 +38,45 @@ const lawhubApi = {
 };
 
 export default lawhubApi;
+
+// ─────────────────────────────────────────────────────────────────
+// Phase C — Lawyer Workspace API  (/api/workspace/*)
+// ─────────────────────────────────────────────────────────────────
+const ws = (path, params) => api.get(`/workspace${path}`, params);
+const wsp = (path, body)  => api.patch(`/workspace${path}`, body);
+
+export const workspaceApi = {
+  // C1 — Dashboard
+  dashboard: () => ws('/dashboard'),
+
+  // C2 — Calendar
+  calendar: async () => withIds((await ws('/calendar')).events),
+
+  // C3 — Cases list
+  cases: async (params) => withIds((await ws('/cases', params)).cases),
+
+  // C4 — Case details
+  case: async (id) => withId((await ws(`/cases/${id}`)).case),
+
+  // C6 — Assign case
+  assignCase: (id, assignedTo) => wsp(`/cases/${id}/assign`, { assignedTo }),
+
+  // C5 — Team
+  team: async () => withIds((await ws('/team')).team),
+  setPermission: (id, permission) => wsp(`/team/${id}/permission`, { permission }),
+
+  // C7/C8 — Profile (services + membership)
+  profile: async () => (await ws('/profile')).profile,
+  updateProfile: (body) => wsp('/profile', body),
+
+  // C9 — Plans
+  plans: async () => withIds((await ws('/plans')).plans),
+
+  // C10 — Reviews
+  reviews: async () => {
+    const d = await ws('/reviews');
+    return { reviews: withIds(d.reviews), stats: d.stats };
+  },
+  disputeReview: (id) => wsp(`/reviews/${id}/dispute`),
+};
+

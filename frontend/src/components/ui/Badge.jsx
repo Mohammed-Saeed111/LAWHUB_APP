@@ -1,0 +1,4 @@
+const S = { active: { l: 'نشطة', c: 'text-ok border-ok/30 bg-ok/10' }, pending: { l: 'معلّقة', c: 'text-warn border-warn/30 bg-warn/10' }, archived: { l: 'مؤرشفة', c: 'text-ink-muted border-white/15 bg-white/5' }, confirmed: { l: 'مؤكّد', c: 'text-ok border-ok/30 bg-ok/10' }, disputed: { l: 'قيد النزاع', c: 'text-danger border-danger/30 bg-danger/10' } };
+const P = { high: { l: 'عالية', c: 'text-danger border-danger/30 bg-danger/10' }, medium: { l: 'متوسطة', c: 'text-warn border-warn/30 bg-warn/10' }, low: { l: 'منخفضة', c: 'text-ink-muted border-white/15 bg-white/5' } };
+const Badge = ({ status, priority }) => { const m = priority ? P[priority] : S[status]; if (!m) return null; return <span className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium ${m.c}`}><span className="h-1.5 w-1.5 rounded-full bg-current" /> {m.l}</span>; };
+export default Badge;

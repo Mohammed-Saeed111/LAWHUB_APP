@@ -28,3 +28,13 @@ export const authorize = (...roles) => (req, res, next) => {
   if (!roles.includes(req.user.role)) throw ApiError.forbidden('You do not have permission.');
   next();
 };
+
+/**
+ * Phase F — Admin Console guard.
+ * Defaults to ['admin', 'moderator', 'support']; pass specific roles to narrow access.
+ */
+export const adminOnly = (...roles) => (req, res, next) => {
+  const allowed = roles.length ? roles : ['admin', 'moderator', 'support'];
+  if (!allowed.includes(req.user.role)) throw ApiError.forbidden('هذه اللوحة مخصّصة لطاقم الإدارة.');
+  next();
+};

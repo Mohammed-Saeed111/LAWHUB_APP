@@ -11,14 +11,23 @@
 }
 
 @layer components {
+  /* ---- Phase A-C Components ---- */
   .card-luxury { @apply bg-navy-700/70 border border-gold/15 rounded-2xl shadow-card backdrop-blur-sm; }
   .input-luxury { @apply w-full rounded-xl bg-navy-800 border border-white/10 px-4 py-3 text-ink placeholder:text-ink-faint outline-none transition focus:border-gold/60 focus:ring-2 focus:ring-gold/20; }
-  .btn-gold { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gold px-5 py-3 font-semibold text-navy transition hover:bg-gold-light active:scale-[0.99] disabled:opacity-60; }
-  .btn-outline { @apply inline-flex items-center justify-center gap-2 rounded-xl border border-gold/40 px-5 py-3 font-semibold text-gold transition hover:bg-gold/10 active:scale-[0.99]; }
-  .btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 font-medium text-ink-muted transition hover:text-ink hover:bg-white/5; }
+  .btn-gold { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gold px-5 py-2.5 font-semibold text-surface transition hover:bg-gold-light active:scale-[0.99] disabled:opacity-60; }
+  .btn-outline { @apply inline-flex items-center justify-center gap-2 rounded-xl border border-gold/40 px-5 py-2.5 font-semibold text-gold transition hover:bg-gold/10 active:scale-[0.99]; }
+  .btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-lg px-3 py-2 font-medium text-ink-muted transition hover:text-ink hover:bg-white/5; }
   .chip { @apply inline-flex items-center gap-1.5 rounded-full border border-gold/25 bg-gold/10 px-3 py-1 text-xs font-medium text-gold; }
   .link-gold { @apply text-gold hover:text-gold-light transition font-medium; }
   .section-title { @apply text-xl font-bold text-ink; }
+
+  /* ---- Phase D Components (Legal Luxury + AI) ---- */
+  .glass { @apply rounded-2xl border border-white/10 bg-white/5 shadow-glass backdrop-blur-xl; }
+  .glass-gold { @apply rounded-2xl border border-gold/25 bg-gold/[0.06] shadow-glass backdrop-blur-xl; }
+  /* Marketplace card: #1A1C1C + 2px gold top border + hover elevation */
+  .market-card { @apply rounded-2xl border-t-2 border-gold/70 bg-card shadow-glass transition hover:-translate-y-1 hover:shadow-ai-glow; border-inline: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .input { @apply w-full rounded-lg bg-surface-800/80 border border-white/10 px-4 py-2.5 text-ink placeholder:text-ink-faint outline-none transition focus:border-gold/60 focus:ring-2 focus:ring-gold/20; }
+  .nav-active { @apply bg-gold/10 text-gold border-gold/30; }
 }
 
 ::-webkit-scrollbar { width: 8px; height: 8px; }

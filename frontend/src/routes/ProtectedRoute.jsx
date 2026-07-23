@@ -3,11 +3,12 @@ import useAuth from '../hooks/useAuth.js';
 import Logo from '../components/ui/Logo.jsx';
 
 /**
- * Guards private routes. While the session bootstraps we show a splash-like
- * loader; unauthenticated users are sent to the onboarding splash (/welcome).
+ * Guards private routes. Optionally accepts a `roles` prop to restrict
+ * access to specific user roles (e.g. ['lawyer', 'office'] for Phase C).
+ * While the session bootstraps we show a splash-like loader.
  */
-const ProtectedRoute = ({ children }) => {
-  const { isAuthenticated, loading } = useAuth();
+const ProtectedRoute = ({ children, roles }) => {
+  const { isAuthenticated, loading, user } = useAuth();
   const location = useLocation();
 
   if (loading) {
@@ -22,7 +23,13 @@ const ProtectedRoute = ({ children }) => {
     return <Navigate to="/welcome" state={{ from: location }} replace />;
   }
 
+  // Role-based guard (Phase C — Lawyer Workspace)
+  if (roles && user?.role && !roles.includes(user.role)) {
+    return <Navigate to="/" replace />;
+  }
+
   return children;
 };
 
 export default ProtectedRoute;
+

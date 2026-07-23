@@ -11,7 +11,7 @@ const userSchema = new Schema(
     password: { type: String, required: true, minlength: 8, select: false },
 
     // Three account types (Screen 4): client / lawyer / office
-    role: { type: String, enum: ['client', 'lawyer', 'office'], default: 'client' },
+    role: { type: String, enum: ['client', 'lawyer', 'office', 'admin', 'moderator', 'support'], default: 'client' },
 
     // Lawyer / office professional credentials (Screen 7)
     barNumber: { type: String, trim: true, default: null },
@@ -41,6 +41,10 @@ const userSchema = new Schema(
     avatarUrl: { type: String, default: null },
     lastLoginAt: { type: Date, default: null },
     isActive: { type: Boolean, default: true },
+
+    // Phase F — Admin Console
+    permissions: [{ type: String }], // cms, finances, verifications, users, system
+    city: { type: String, default: null },
   },
   { timestamps: true }
 );

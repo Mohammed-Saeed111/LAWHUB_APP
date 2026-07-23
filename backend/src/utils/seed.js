@@ -17,6 +17,18 @@ import Category from '../models/category.model.js';
 import Case from '../models/case.model.js';
 import Consultation from '../models/consultation.model.js';
 import Favorite from '../models/favorite.model.js';
+// Phase C models
+import Appointment  from '../models/appointment.model.js';
+import Member       from '../models/member.model.js';
+import LawyerReview from '../models/lawyerReview.model.js';
+import Plan         from '../models/plan.model.js';
+import Profile      from '../models/profile.model.js';
+// Phase D models
+import ContractTemplate from '../models/template.model.js';
+import Transaction      from '../models/transaction.model.js';
+import AnalysisReport   from '../models/analysis.model.js';
+import CaseAdvice       from '../models/advice.model.js';
+
 
 const CATEGORIES = [
   { key: 'criminal', label: 'جنائي', icon: 'FiShield', count: 128 },
@@ -51,6 +63,9 @@ const run = async () => {
     User.deleteMany({ email: 'client@lawhub.eg' }),
     Lawyer.deleteMany({}), Review.deleteMany({}), Article.deleteMany({}),
     Category.deleteMany({}), Case.deleteMany({}), Consultation.deleteMany({}), Favorite.deleteMany({}),
+    // Phase D
+    ContractTemplate.deleteMany({}), Transaction.deleteMany({}),
+    AnalysisReport.deleteMany({}), CaseAdvice.deleteMany({}),
   ]);
 
   // Demo client account (password hashed by the pre-save hook).
@@ -93,6 +108,90 @@ const run = async () => {
         { date: '2026-07-16', title: 'في انتظار رد العميل', done: false },
       ] },
   ]);
+
+  // ── Phase C: Lawyer Workspace seed ──────────────────────────────
+  await Promise.all([
+    Appointment.deleteMany({}), Member.deleteMany({}),
+    LawyerReview.deleteMany({}), Plan.deleteMany({}), Profile.deleteMany({}),
+    User.deleteMany({ email: 'lawyer@lawhub.eg' }),
+  ]);
+
+  const lawyerUser = new User({
+    fullName: 'المستشار أحمد الجندي', email: 'lawyer@lawhub.eg',
+    phone: '01000000099', password: 'Lawyer@123',
+    role: 'lawyer', city: 'القاهرة',
+    isEmailVerified: true, isPhoneVerified: true, preferredLanguage: 'ar',
+  });
+  await lawyerUser.save();
+
+  await Appointment.insertMany([
+    { time: '10:00', client: 'محمد عبد الله', type: 'فيديو',    topic: 'نزاع عقاري',    status: 'confirmed' },
+    { time: '11:30', client: 'شركة النور',    type: 'بالمكتب', topic: 'عقد شراكة',     status: 'confirmed' },
+    { time: '13:00', client: 'سارة إبراهيم', type: 'هاتف',     topic: 'أحوال شخصية',  status: 'pending'   },
+    { time: '15:30', client: 'أحمد فؤاد',    type: 'فيديو',    topic: 'قضية عمالية',  status: 'confirmed' },
+    { day: 0, hour: '10:00', client: 'محمد عبد الله', type: 'فيديو'    },
+    { day: 2, hour: '11:00', client: 'سارة إبراهيم', type: 'هاتف'     },
+    { day: 3, hour: '15:00', client: 'أحمد فؤاد',    type: 'فيديو'    },
+  ]);
+
+  await Member.insertMany([
+    { name: 'المستشار أحمد الجندي', role: 'شريك',          seed: 'ahmed',  cases: 12, permission: 'admin',  online: true  },
+    { name: 'المستشارة منى شعبان', role: 'محامٍ أول',      seed: 'mona',   cases: 8,  permission: 'editor', online: false },
+    { name: 'المستشار خالد سمير',  role: 'محامٍ',          seed: 'khaled', cases: 6,  permission: 'editor', online: true  },
+    { name: 'نورا حسن',            role: 'مساعد قانوني',   seed: 'noura',  cases: 0,  permission: 'viewer', online: true  },
+  ]);
+
+  await LawyerReview.insertMany([
+    { author: 'محمد ع.', rating: 5, date: 'منذ أسبوع',   text: 'احترافية عالية ومتابعة دقيقة للقضية. أنصح به بشدة.', status: 'published' },
+    { author: 'هبة م.', rating: 5, date: 'منذ أسبوعين', text: 'شرح لي كل خطوة بوضوح وكسبنا القضية.',                status: 'published' },
+    { author: 'أيمن س.',rating: 2, date: 'منذ شهر',     text: 'التواصل كان أبطأ من المتوقع.',                        status: 'disputed'  },
+  ]);
+
+  await Plan.insertMany([
+    { key: 'pro',   name: 'Pro',   price: 499,  highlight: false, features: ['ظهور أعلى في نتائج البحث', 'حتى 30 قضية نشطة', 'تقارير أداء شهرية', 'دعم فني خلال 24 ساعة'] },
+    { key: 'elite', name: 'Elite', price: 999,  highlight: true,  features: ['شارة محامٍ مميّز الذهبية', 'قضايا غير محدودة', 'أولوية في التوصيات', 'تحليلات متقدمة', 'دعم فوري مخصّص'] },
+    { key: 'firm',  name: 'Firm',  price: 2499, highlight: false, features: ['كل مزايا Elite', 'إدارة فريق حتى 20 عضو', 'توزيع ذكي للقضايا', 'صفحة مكتب مخصّصة', 'مدير حساب مخصّص'] },
+  ]);
+
+  await Profile.create({
+    specializations: ['جنائي', 'دستوري'], cities: ['القاهرة', 'الجيزة'],
+    services: [
+      { key: 'c30',      label: 'استشارة سريعة (30 دقيقة)', price: 300  },
+      { key: 'c60',      label: 'استشارة موسّعة (60 دقيقة)', price: 550  },
+      { key: 'contract', label: 'مراجعة/صياغة عقد',          price: 1200 },
+      { key: 'rep',      label: 'تمثيل قضائي (جلسة)',         price: 2500 },
+    ],
+    membership: { barNumber: '123456', association: 'نقابة المحامين — القاهرة', issueDate: '2020-01-15', expiryDate: '2026-12-31', daysLeft: 167 },
+    currentPlan: 'pro',
+  });
+
+  console.log('⚖️  Phase C seed complete.');
+  console.log('   Lawyer login → lawyer@lawhub.eg / Lawyer@123');
+
+  // ── Phase D: Contract Templates ─────────────────────────────────
+  const F = (key, label, placeholder) => ({ key, label, type: 'text', placeholder });
+  const TEMPLATES = [
+    { title: 'عقد إيجار سكني', category: 'عقاري', description: 'عقد إيجار وحدة سكنية متوافق مع القانون المصري.', price: 150, aiVerified: true, rating: 4.9, downloads: 320, pages: 4, icon: 'FiHome',
+      fields: [F('lessor', 'المؤجِّر'), F('lessee', 'المستأجِر'), F('unit', 'وصف الوحدة'), F('rent', 'قيمة الإيجار الشهري'), F('date', 'تاريخ السريان')],
+      body: 'عقد إيجار مبرم بين {{lessor}} (المؤجِّر) و {{lessee}} (المستأجِر) بشأن {{unit}}، بقيمة إيجار شهري {{rent}} جنيهًا، يبدأ من {{date}}.' },
+    { title: 'عقد بيع سيارة', category: 'مدني', description: 'عقد بيع مركبة مع إقرار استلام.', price: 100, aiVerified: true, rating: 4.7, downloads: 210, pages: 2, icon: 'FiTruck',
+      fields: [F('seller', 'البائع'), F('buyer', 'المشتري'), F('car', 'بيانات السيارة'), F('price', 'الثمن'), F('date', 'تاريخ البيع')],
+      body: 'أقر أنا {{seller}} ببيع السيارة {{car}} إلى {{buyer}} بمبلغ {{price}} جنيهًا بتاريخ {{date}}.' },
+    { title: 'عقد تأسيس شركة ذات مسؤولية محدودة', category: 'شركات', description: 'عقد تأسيس ش.ذ.م.م مع توزيع الحصص.', price: 500, aiVerified: true, rating: 5.0, downloads: 95, pages: 8, icon: 'FiBriefcase',
+      fields: [F('company', 'اسم الشركة'), F('partners', 'الشركاء'), F('capital', 'رأس المال'), F('activity', 'غرض الشركة'), F('date', 'تاريخ التأسيس')],
+      body: 'تأسّست شركة {{company}} ذات المسؤولية المحدودة بين {{partners}} برأس مال {{capital}} جنيهًا لممارسة نشاط {{activity}}، اعتبارًا من {{date}}.' },
+    { title: 'عقد عمل محدد المدة', category: 'عمالي', description: 'عقد عمل متوافق مع قانون العمل المصري.', price: 120, aiVerified: true, rating: 4.8, downloads: 178, pages: 3, icon: 'FiUser',
+      fields: [F('employer', 'صاحب العمل'), F('employee', 'العامل'), F('job', 'المسمى الوظيفي'), F('salary', 'الأجر الشهري'), F('duration', 'مدة العقد')],
+      body: 'عقد عمل بين {{employer}} و {{employee}} للعمل بوظيفة {{job}} بأجر شهري {{salary}} جنيهًا لمدة {{duration}}.' },
+    { title: 'اتفاقية عدم إفصاح (NDA)', category: 'شركات', description: 'اتفاقية حماية معلومات سرية بين طرفين.', price: 200, aiVerified: true, rating: 4.9, downloads: 142, pages: 3, icon: 'FiLock',
+      fields: [F('party1', 'الطرف الأول'), F('party2', 'الطرف الثاني'), F('purpose', 'غرض الإفصاح'), F('duration', 'مدة السرية'), F('date', 'تاريخ التوقيع')],
+      body: 'اتفاقية عدم إفصاح بين {{party1}} و {{party2}} بخصوص {{purpose}}، تسري التزامات السرية لمدة {{duration}} من {{date}}.' },
+    { title: 'توكيل رسمي عام', category: 'مدني', description: 'صيغة توكيل عام للتصرفات القانونية.', price: 90, aiVerified: true, rating: 4.6, downloads: 260, pages: 2, icon: 'FiFileText',
+      fields: [F('principal', 'الموكِّل'), F('agent', 'الوكيل'), F('scope', 'نطاق التوكيل'), F('date', 'التاريخ')],
+      body: 'أنا {{principal}} أوكّل {{agent}} في {{scope}}، وذلك اعتبارًا من {{date}}.' },
+  ];
+  await ContractTemplate.insertMany(TEMPLATES);
+  console.log(`🏛️  Phase D seed complete — ${TEMPLATES.length} contract templates.`);
 
   console.log('🌱 Seed complete.');
   console.log('   Demo login →  client@lawhub.eg  /  Client@123');

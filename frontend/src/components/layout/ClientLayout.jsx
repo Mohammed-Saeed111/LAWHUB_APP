@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { NavLink, useNavigate, Outlet } from 'react-router-dom';
 import {
   FiHome, FiMap, FiSearch, FiHeart, FiFolder, FiBell, FiMenu, FiX, FiUser, FiFileText,
+  FiShoppingBag, FiCpu, FiCompass, FiCreditCard,
+  FiVideo, FiGlobe, FiMessageSquare, FiBellOff, FiGift, FiBarChart2, FiLifeBuoy,
 } from 'react-icons/fi';
 import Logo from '../ui/Logo.jsx';
 import Avatar from '../ui/Avatar.jsx';
@@ -13,6 +15,23 @@ const NAV = [
   { to: '/favorites', icon: FiHeart, label: 'المفضلة' },
   { to: '/cases', icon: FiFolder, label: 'قضاياي' },
   { to: '/policy', icon: FiFileText, label: 'سياسة الإلغاء' },
+];
+
+const MARKET_NAV = [
+  { to: '/market', icon: FiShoppingBag, label: 'سوق العقود', end: true },
+  { to: '/market/analyze', icon: FiCpu, label: 'تحليل العقد بالذكاء' },
+  { to: '/market/advisor', icon: FiCompass, label: 'مستشارك الذكي' },
+  { to: '/market/transactions', icon: FiCreditCard, label: 'معاملاتي' },
+];
+
+const COMMUNITY_NAV = [
+  { to: '/community/videos',        icon: FiVideo,        label: 'مكتبة الفيديو' },
+  { to: '/community/news',          icon: FiGlobe,        label: 'الأخبار القانونية' },
+  { to: '/community/chat',          icon: FiMessageSquare,label: 'المحادثات' },
+  { to: '/community/notifications', icon: FiBell,         label: 'الإشعارات' },
+  { to: '/community/referral',      icon: FiGift,         label: 'الإحالة والمكافآت' },
+  { to: '/community/finance',       icon: FiBarChart2,    label: 'التقارير المالية' },
+  { to: '/community/help',          icon: FiLifeBuoy,     label: 'مركز المساعدة' },
 ];
 
 const ClientLayout = () => {
@@ -39,6 +58,34 @@ const ClientLayout = () => {
             <Icon size={19} /> {label}
           </NavLink>
         ))}
+
+        {/* Phase D — Legal Commerce & AI */}
+        <div className="my-3 border-t border-white/5 pt-3">
+          <p className="mb-1.5 px-3 text-[10px] font-semibold uppercase tracking-widest text-ink-faint">التجارة القانونية</p>
+          {MARKET_NAV.map(({ to, icon: Icon, label, end }) => (
+            <NavLink key={to} to={to} end={end} onClick={() => setOpen(false)}
+              className={({ isActive }) =>
+                `flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm transition ${
+                  isActive ? 'bg-gold/10 text-gold font-semibold shadow-gold' : 'text-ink-muted hover:bg-white/5 hover:text-ink'
+                }`}>
+              <Icon size={19} /> {label}
+            </NavLink>
+          ))}
+        </div>
+
+        {/* Phase E — Community, Education & Communication */}
+        <div className="my-3 border-t border-white/5 pt-3">
+          <p className="mb-1.5 px-3 text-[10px] font-semibold uppercase tracking-widest text-ink-faint">المجتمع والتعليم</p>
+          {COMMUNITY_NAV.map(({ to, icon: Icon, label }) => (
+            <NavLink key={to} to={to} onClick={() => setOpen(false)}
+              className={({ isActive }) =>
+                `flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm transition ${
+                  isActive ? 'bg-gold/10 text-gold font-semibold shadow-gold' : 'text-ink-muted hover:bg-white/5 hover:text-ink'
+                }`}>
+              <Icon size={19} /> {label}
+            </NavLink>
+          ))}
+        </div>
       </nav>
 
       <div className="mt-4 rounded-2xl border border-gold/20 bg-navy-800/60 p-4 text-center">
@@ -77,7 +124,7 @@ const ClientLayout = () => {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <button onClick={() => navigate('/cases')} className="btn-ghost relative p-2">
+            <button onClick={() => navigate('/community/notifications')} className="btn-ghost relative p-2">
               <FiBell size={20} />
               <span className="absolute top-1 ltr:right-1 rtl:left-1 h-2 w-2 rounded-full bg-gold" />
             </button>

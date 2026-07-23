@@ -1,0 +1,16 @@
+const AdminPageHeader = ({ title, subtitle, children }) => (
+  <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
+    <div>
+      <div className="flex items-center gap-2">
+        <span className="h-6 w-1 rounded bg-gold" />
+        <h1 className="text-xl font-bold text-admin-ink">{title}</h1>
+      </div>
+      {subtitle && (
+        <p className="mt-1 ltr:ml-3 rtl:mr-3 text-sm text-admin-ink-muted">{subtitle}</p>
+      )}
+    </div>
+    {children && <div className="flex flex-wrap gap-2">{children}</div>}
+  </div>
+);
+
+export default AdminPageHeader;

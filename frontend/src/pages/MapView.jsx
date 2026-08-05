@@ -1,6 +1,12 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { MapContainer, Marker, TileLayer } from 'react-leaflet';
+import MarkerClusterGroup from 'react-leaflet-cluster';
 import { useNavigate } from 'react-router-dom';
 import { FiMapPin, FiX } from 'react-icons/fi';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import 'leaflet.markercluster/dist/MarkerCluster.css';
+import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 import lawhubApi from '../api/lawhubApi.js';
 import useApi from '../hooks/useApi.js';
 import Avatar from '../components/ui/Avatar.jsx';
@@ -9,27 +15,54 @@ import VerifiedBadge from '../components/ui/VerifiedBadge.jsx';
 import Loader from '../components/ui/Loader.jsx';
 import ErrorState from '../components/ui/ErrorState.jsx';
 
-/**
- * SCREEN 2 — Interactive Map View.
- * A dark-mode stylized map with gold pins for lawyer offices. Clicking a pin
- * opens a side preview panel (photo, rating, specialty). Lawyers (with lat/lng)
- * are loaded from the API. (Static SVG map so the demo needs no external
- * tiles/keys; swap for Google/Mapbox in production.)
- */
+const DEFAULT_CENTER = [30.0444, 31.2357];
+
+const createPinIcon = (lawyer, active) => {
+  const style = active ? { bg: '#f5c96f', text: '#0f172a' } : { bg: '#0f172a', text: '#f5c96f' };
+  return L.divIcon({
+    html: `
+      <div style="display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 8px 18px rgba(0,0,0,0.35));">
+        <div style="width:28px;height:28px;border-radius:999px;border:2px solid #f5c96f;background:${style.bg};color:${style.text};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;box-shadow:0 0 0 4px ${active ? 'rgba(245,201,111,0.24)' : 'rgba(15,23,42,0.28)'};">${active ? '✓' : '⚖'}</div>
+      </div>
+    `,
+    className: '',
+    iconSize: [28, 28],
+    iconAnchor: [14, 14],
+  });
+};
+
+const createClusterIcon = (cluster) => {
+  const count = cluster.getChildCount();
+  return L.divIcon({
+    html: `<div style="background:#f5c96f;color:#0f172a;border:2px solid #0f172a;border-radius:999px;width:42px;height:42px;display:flex;align-items:center;justify-content:center;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,0.3);">${count}</div>`,
+    className: '',
+    iconSize: [42, 42],
+    iconAnchor: [21, 21],
+  });
+};
+
 const MapView = () => {
   const navigate = useNavigate();
   const [selected, setSelected] = useState(null);
+  const [view, setView] = useState(DEFAULT_CENTER);
+  const [zoom, setZoom] = useState(6);
 
   const { data: lawyers, loading, error, refetch } = useApi(
     async () => (await lawhubApi.getLawyers({ limit: 100 })).lawyers.filter((l) => l.lat && l.lng),
     []
   );
 
-  // Project lat/lng into the SVG viewport (rough, for demo layout only).
-  const project = (l) => ({
-    x: ((l.lng - 29.8) / (31.6 - 29.8)) * 100,
-    y: (1 - (l.lat - 30.0) / (31.3 - 30.0)) * 100,
-  });
+  useEffect(() => {
+    if (!lawyers?.length) return;
+    if (selected) {
+      setView([selected.lat, selected.lng]);
+      setZoom(10);
+      return;
+    }
+    const first = lawyers[0];
+    setView([first.lat, first.lng]);
+    setZoom(8);
+  }, [lawyers, selected]);
 
   return (
     <div className="space-y-4">
@@ -44,41 +77,26 @@ const MapView = () => {
 
       {!loading && !error && lawyers && (
         <div className="relative overflow-hidden rounded-3xl border border-gold/15" style={{ height: '70vh' }}>
-          {/* Stylized dark map */}
-          <div className="absolute inset-0 bg-navy-900">
-            <svg className="h-full w-full opacity-40" preserveAspectRatio="none">
-              <defs>
-                <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
-                  <path d="M48 0H0V48" fill="none" stroke="#1c243b" strokeWidth="1" />
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#grid)" />
-              {/* faux roads */}
-              <path d="M0 60% Q 40% 40% 100% 55%" stroke="#C9A24B22" strokeWidth="6" fill="none" />
-              <path d="M30% 0 Q 45% 50% 35% 100%" stroke="#C9A24B22" strokeWidth="5" fill="none" />
-              <path d="M0 30% L 100% 35%" stroke="#1c243b" strokeWidth="8" fill="none" />
-            </svg>
-          </div>
+          <MapContainer center={view} zoom={zoom} scrollWheelZoom className="h-full w-full" style={{ height: '100%', width: '100%' }}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <MarkerClusterGroup chunkedLoading iconCreateFunction={createClusterIcon}>
+              {lawyers.map((l) => {
+                const active = selected?.id === l.id;
+                return (
+                  <Marker
+                    key={l.id}
+                    position={[l.lat, l.lng]}
+                    icon={createPinIcon(l, active)}
+                    eventHandlers={{ click: () => setSelected(l) }}
+                  />
+                );
+              })}
+            </MarkerClusterGroup>
+          </MapContainer>
 
-          {/* Gold pins */}
-          {lawyers.map((l) => {
-            const p = project(l);
-            const active = selected?.id === l.id;
-            return (
-              <button key={l.id} onClick={() => setSelected(l)}
-                className="absolute -translate-x-1/2 -translate-y-full transition"
-                style={{ left: `${p.x}%`, top: `${p.y}%` }}>
-                {active && <span className="absolute inset-0 -m-2 rounded-full bg-gold/40 animate-pulse-ring" />}
-                <span className={`relative flex flex-col items-center ${active ? 'scale-110' : ''}`}>
-                  <span className={`flex h-9 w-9 items-center justify-center rounded-full border-2 shadow-gold ${active ? 'bg-gold text-navy border-gold-light' : 'bg-navy-700 text-gold border-gold/60'}`}>
-                    <FiMapPin size={18} />
-                  </span>
-                </span>
-              </button>
-            );
-          })}
-
-          {/* Side preview panel */}
           {selected && (
             <div className="absolute inset-y-0 ltr:right-0 rtl:left-0 w-full max-w-sm border-gold/15 bg-navy-800/95 p-5 backdrop-blur ltr:border-l rtl:border-r animate-fade-up">
               <button onClick={() => setSelected(null)} className="btn-ghost absolute top-3 ltr:left-3 rtl:right-3 p-2"><FiX size={18} /></button>
@@ -94,7 +112,7 @@ const MapView = () => {
                 </div>
               </div>
               <div className="mt-4 flex flex-wrap gap-2">
-                {selected.specialties.map((s) => <span key={s} className="chip">{s}</span>)}
+                {(selected.specialties || []).map((s) => <span key={s} className="chip">{s}</span>)}
               </div>
               <p className="mt-4 flex items-center gap-1 text-sm text-ink-muted">
                 <FiMapPin size={14} className="text-gold" /> {selected.city} — {selected.area}
@@ -110,4 +128,5 @@ const MapView = () => {
     </div>
   );
 };
+
 export default MapView;

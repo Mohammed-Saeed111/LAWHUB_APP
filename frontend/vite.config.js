@@ -4,9 +4,20 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  resolve: { alias: { '@': path.resolve(__dirname, './src') } },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
   server: {
+    host: '127.0.0.1',
     port: 5173,
+    strictPort: true,
+    hmr: {
+      host: '127.0.0.1',
+      clientPort: 5173,
+      protocol: 'ws',
+    },
     proxy: {
       '/api': { target: 'http://localhost:5000', changeOrigin: true },
       '/uploads': { target: 'http://localhost:5000', changeOrigin: true },
